@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtha=device=width, initial-scale=1.0">
+    <title>FLAMES</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!--GAME TITLE-->
+        <h3 class="gameTitle">FLAMES</h3>
+
+        <!--GAME BOX-->
+        <div class="gameBox">
+
+            <!-- INPUT BOX-->
+            <div class="inputBox">
+                <input type="text" id="userName" 
+                onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+                <label >ENTER USER NAME</label>
+            </div>
+            <!-- INPUT BOX-->
+            <div class="inputBox">
+                <input type="text" id="crushName" 
+                onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+                <label >YOUR CRUSH NAME</label>
+            </div>
+        </div>    
+        <!-- BUTTON BOX-->
+        <div class="buttonBox">
+            <button id="checkMatchBtn">
+                <span>Check Match</span>
+                <!-- LOADER GIF -->
+               <img src="image/loader.gif"> 
+            </button>
+            <button id="tryAgainBtn">
+                <span>Try Again</span>
+            </button>
+        </div>
+        <!--MATCH RESULT BOX-->
+        <div class="matchResultBox">
+          Friends
+        </div>
+    </div>
+    <script src="js/app.js">
+
+    </script>
+</body>
+</html>
+<!-- home -->
